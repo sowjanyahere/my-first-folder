@@ -1,0 +1,750 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #0B093B;
+}
+
+a:hover {
+    color: #7620FF;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #fff inset;
+    /* Change the color to your own background color */
+    box-shadow: transparent;
+    -webkit-text-fill-color: #fff;
+}
+
+body {
+    background: #fff;
+    color: #8C96AB;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+@media only screen and (max-width: 859px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+.regular {
+    font-weight: 400 !important;
+}
+
+.semiBold {
+    font-weight: 600 !important;
+}
+
+.extraBold {
+    font-weight: 800 !important;
+}
+
+/* HELLPERS */
+.textCenter {
+    text-align: center
+}
+
+.animate {
+    transition: 0.3s ease;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.x100 {
+    width: 100%;
+}
+
+.active {
+    border-bottom: 2px solid #7620FF;
+    color: #7620FF;
+}
+
+.tag {
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+.shadow {
+    box-shadow: 0 0 11px rgba(237, 232, 237, 0.5);
+    -webkit-box-shadow: 0 0 11px rgba(237, 232, 237, 0.5);
+    -moz-box-shadow: 0 0 11px rgba(237, 232, 237, 0.5);
+}
+
+/* FLEXBOX */
+.flex {
+    display: flex;
+}
+
+.flexSpaceCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexNullCenter {
+    display: flex;
+    align-items: center;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexSpaceNull {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FONT SIZES */
+.font11 {
+    font-size: 0.688rem;
+}
+
+.font12 {
+    font-size: 0.75rem;
+}
+
+.font13 {
+    font-size: 0.813rem;
+}
+
+.font14 {
+    font-size: 0.875rem;
+}
+
+.font15 {
+    font-size: 0.938rem;
+}
+
+.font18 {
+    font-size: 1.125rem;
+}
+
+.font20 {
+    font-size: 1.25rem;
+}
+
+.font25 {
+    font-size: 1.563rem;
+}
+
+.font30 {
+    font-size: 1.875rem;
+}
+
+.font40 {
+    font-size: 2.5rem;
+}
+
+.font60 {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+}
+
+@media only screen and (max-width: 859px) {
+    .font11 {
+        font-size: 0.688rem;
+    }
+
+    .font12 {
+        font-size: 0.688rem;
+    }
+
+    .font13 {
+        font-size: 0.75rem;
+    }
+
+    .font14 {
+        font-size: 0.813rem;
+    }
+
+    .font15 {
+        font-size: 0.813rem;
+    }
+
+    .font18 {
+        font-size: 0.938rem;
+    }
+
+    .font20 {
+        font-size: 1.125rem;
+    }
+
+    .font25 {
+        font-size: 1.25rem;
+    }
+
+    .font30 {
+        font-size: 1.5rem;
+    }
+
+    .font40 {
+        font-size: 1.875rem;
+    }
+
+    .font60 {
+        font-size: 2.8rem;
+    }
+}
+
+/* BORDER RADIUS */
+.radius8 {
+    border-radius: 1rem;
+}
+
+.radius6 {
+    border-radius: 0.6rem;
+}
+
+/* COLORS */
+.darkColor {
+    color: #0B093B;
+}
+
+.purpleColor {
+    color: #7620FF;
+}
+
+.orangeColor {
+    color: #F2B300;
+}
+
+.lightColor {
+    color: #F5F5F5;
+}
+
+.coralColor {
+    color: #C4FFFF;
+}
+
+.greenColor {
+    color: #49CB86;
+}
+
+.greyColor {
+    color: #707070;
+}
+
+.whiteColor {
+    color: #fff;
+}
+
+/* Box Shadow */
+.boxShadow {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+/* BACKGROUNDS */
+.darkBg {
+    background-color: #CE0505;
+}
+
+.lightBg {
+    background-color: #FBFBFB;
+}
+
+.whiteBg {
+    background-color: #fff;
+}
+
+/* Checkbox container */
+.checkbox_container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    line-height: 19px;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #8C96AB;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #3A5075;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_container:hover input~.checkmark {
+    background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox_container input:checked~.checkmark {
+    background: #3A5075 0% 0% no-repeat padding-box;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox_container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox_container .checkmark:after {
+    left: 5px;
+    top: 0px;
+    width: 3px;
+    height: 9px;
+    border: solid #FAFBFC;
+    border-width: 0px 2px 2px 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* Card css */
+.card_maincontainer {
+    margin: 20px;
+    padding: 25px 35px;
+}
+
+.card_LeftfirstInnerCon img {
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 20%;
+}
+
+.card_LeftfirstInnerCon {
+    width: 120px;
+    height: 120px;
+}
+
+.card_firstInnerCon {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccd0d9;
+    padding-bottom: 30px;
+}
+
+.card_mainHeading {
+    text-align: left;
+    font: normal normal 600 30px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+}
+
+.card_subHeading {
+    text-align: left;
+    color: #192F60;
+    line-height: 30px;
+    font: normal normal 500 16px/30px Poppins;
+}
+
+.card_Description {
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #636F88;
+    white-space: nowrap;
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemDetailscon {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.itemDetailsName {
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #636F88;
+}
+
+.itemDetails {
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+}
+
+.card_secondInnerCon {
+    margin-top: 20px;
+}
+
+
+/* create custom radio button */
+.radiobtn_container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #8C96AB;
+    font: normal normal normal 14px/21px Poppins;
+}
+
+/* Hide the browser's default radio button */
+.radiobtn_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 2px solid #3A5075;
+}
+
+/* On mouse-over, add a grey background color */
+.radiobtn_container:hover input~.radiomark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiobtn_container input:checked~.radiomark {
+    background-color: #3A5075;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobtn_container input:checked~.radiomark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobtn_container .radiomark:after {
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.selct_feild {
+    width: 100%;
+}
+
+/* Pagination con */
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    transition: background-color .3s;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #8C96AB;
+    border-radius: 7px;
+    font: normal normal 500 20px/30px Poppins;
+    letter-spacing: 0px;
+    color: #8C96AB;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+}
+
+.pagination a.active {
+    color: white;
+    background: #8C96AB 0% 0% no-repeat padding-box;
+    border: 1px solid #8C96AB;
+    border-radius: 7px;
+}
+
+.second_innerCon {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 50px;
+}
+
+.mainCon {
+    width: 85%;
+    margin: auto;
+}
+
+.second_leftCon {
+    padding: 17px 27px;
+    margin-bottom: 20px;
+}
+
+.headerCon {
+    background: #CE0505 0% 0% no-repeat padding-box;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.headerInnerCon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.createBtn {
+    background: none;
+    font: normal normal 500 16px/25px Poppins;
+    color: #fff;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 12px 15px;
+    margin-left: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.loginTxt {
+    font: normal normal 500 16px/25px Poppins;
+    color: #fff;
+    cursor: pointer;
+}
+.paginationBlock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.createBtn:hover , .loginTxt:hover {
+    color: #fff;
+}
+
+.logoCon {
+    font: normal normal 600 33px/50px Poppins;
+    letter-spacing: 0px;
+    color: #EB2929;
+    opacity: 1;
+    width: 52px;
+    height: 52px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.filterOptions {
+    font: normal normal normal 14px/21px Poppins;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #192F60;
+}
+
+.filterLabel {
+    color: #192F60;
+    font: normal normal 600 18px/27px Poppins;
+}
+
+.card_maincontainer:first-child {
+    margin-top: 0px;
+}
+
+.main_heading {
+    font: normal normal bold 36px/55px Poppins;
+    color: #192F60;
+    margin-bottom: 20px;
+}
+
+.selct_feild {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: 2px solid #8C96AB;
+    color: #8C96AB;
+}
